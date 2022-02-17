@@ -1,12 +1,32 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <title>Blog</title>
 </head>
 <body>
-    <h2>This is my blog</h2>
+    <div id="content">
+        <header>
+            <h2>International Students Blog</h2>
+            <p>Find information that is going to be very useful</p>
+        </header>
+
+        {% if posts %}
+            {% for post in  posts%}
+                <div class="post">
+                    <a href="{{ post.id }}">
+                        <h3> {{ post.post_title }} </h3>
+                    </a>
+                    <p>{{ post.post_description }}</p>
+                    <p class="post-date">{{ post.user.name }}, {{ post.post_date }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
 </body>
 </html>

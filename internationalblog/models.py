@@ -16,7 +16,8 @@ class User(models.Model):
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.RESTRICT)
     post_title = models.CharField(max_length=200)
-    post_message = models.CharField(max_length=1000)
+    post_description = models.CharField(max_length=300, default="This is the description")
+    post_message = models.CharField(max_length=5000)
     post_date = models.DateTimeField('date posted')
     status = models.BooleanField()
 

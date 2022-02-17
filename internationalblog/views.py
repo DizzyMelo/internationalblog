@@ -6,7 +6,7 @@ from .models import Post
 
 def index(request):
     # latest_question_list = Post.objects.order_by('-pub_date')[:5]
-    posts = Post.objects.all()[::-1]
+    posts = Post.objects.select_related('user')[::-1]
     context = {'posts': posts}
     return render(request, 'index.html', context)
 def post(request, post_id):
