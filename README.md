@@ -8,7 +8,7 @@ To get the project running, you just have to run the command **py manage.py runs
 
 When the application run, you will see a list of previous added posts.
 
-You can watch the software demo here [Software Demo Video](http://youtube.link.goes.here)
+You can watch the software demo here [Software Demo Video](https://youtu.be/cTZ4EGr6tFg)
 
 # Web Pages
 
