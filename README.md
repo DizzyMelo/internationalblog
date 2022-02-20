@@ -1,21 +1,21 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-This web application was created ti
-
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
+This web application was created to help international students at BYUI find out valuable information shared by those who have experienced what is like to be an internation student. It was written using the python programming language and the Django framework.
 
 This website intends to provide international students valuable information they usually don't have and take months to learn.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
+To get the project running, you just have to run the command **py manage.py runserver** if you are on Windows, if you are on Mac run **python3 manage.py runserver**.
 
-[Software Demo Video](http://youtube.link.goes.here)
+When the application run, you will see a list of previous added posts.
+
+You can watch the software demo here [Software Demo Video](http://youtube.link.goes.here)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
-
+* Home: Contains a list of previous posts
+* New Post: User adds a new post - user can navigate to New Post page by clicking the New Post link in the Home page
+* Post: A detailed view of a specific post - User navigates to this page by clicking on the post title
+* Thanks: After adding a new post, user is redirected to this page.
 # Development Environment
 
 * Django - 4.0.1
