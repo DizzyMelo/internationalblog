@@ -14,6 +14,9 @@ body {
 #content {
     margin: 0 auto;
     max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -24,10 +27,15 @@ header {
 header p {
     font-style: italic;
 }
-
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+}
 .post {
     max-width: 700px;
-    margin: 1.3em auto;
+    margin: 1.3em;
 }
 
 .post h3 {
@@ -42,7 +50,7 @@ header p {
     justify-content: end;
 }
 
-/* POST PAGe */
+/* POST PAGE */
 
 .post-header {
     margin: 2em auto;
@@ -57,4 +65,36 @@ header p {
     font-size: 0.7em;
     color: #888;
     font-style: italic;
+}
+
+/* NEW POST PAGE */
+
+.input-style {
+    border-radius: 3px;
+    margin-bottom: 1em;
+}
+
+.new-post {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+.new-post__input {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    height: 30px;
+}
+input[type="submit"] {
+    width: 350px;
+    height: 40px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    color: white;
 }
